@@ -1,5 +1,8 @@
 FROM ubuntu:trusty-20170119
-MAINTAINER qingfengbaozai@gmail.com
+
+MAINTAINER purewind "qingfengbaozai@gmail.com"  
+
+ADD sources.list /etc/apt
 
 RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends \
  && echo 'APT::Install-Suggests 0;' >> /etc/apt/apt.conf.d/01norecommends \
